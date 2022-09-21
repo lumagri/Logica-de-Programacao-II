@@ -1,0 +1,29 @@
+
+<script type="text/javascript">
+function brl() {
+	document.write('<br>')
+}
+
+function show(texto) {
+	document.write(texto)
+}
+
+function read(){
+	return parseInt(prompt('Insira o valor de N'));
+}
+
+var N = read()
+var G = N
+
+while (N!=0){
+	N = read()
+	if(G>N){
+		G=G 
+	}else{
+		G=N
+	}
+}
+
+show(G)
+
+</script>

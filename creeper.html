@@ -1,0 +1,50 @@
+creeper.html
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+	
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	pincel.fillStyle = 'darkgreen';
+	pincel.fillRect(0,0, 350, 300);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(50,50, 90, 90);
+
+	
+	//bola do olho esquerdo quadrada
+	// pincel.fillStyle = 'grey';
+	// pincel.fillRect(81,81, 20, 20);
+
+	
+	//bola do olho esquerdo redonda
+	pincel.fillStyle = 'grey';
+	pincel.beginPath();
+	pincel.arc(95, 95, 15, 15, 2 * 3.14);
+	pincel.fill();
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(200,50, 90, 90);
+
+	//bola do olho direito quadrada
+	// pincel.fillStyle = 'grey';
+	// pincel.fillRect(233,81, 20, 20);
+
+	//bola do olho direito redonda
+	pincel.fillStyle = 'grey';
+	pincel.beginPath();
+	pincel.arc(245, 95, 15, 15, 2 * 3.14);
+	pincel.fill();
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(135,130, 70, 100);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(100,190, 40, 110);
+
+	pincel.fillStyle = 'black';
+	pincel.fillRect(200,190, 40, 110);
+
+</script>

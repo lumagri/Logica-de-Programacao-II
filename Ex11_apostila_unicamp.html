@@ -1,0 +1,43 @@
+Ex11_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function readNum(text){
+	return parseFloat(prompt(text));
+}
+function readText(text){
+	return prompt(text);
+}
+brl();
+
+var idade = readNum('Insira a idade');
+if(idade < 5){
+	show('Sem categoria - baixa idade.');
+}
+if(idade >= 5 & idade <= 7){
+	show('Categoria - Infantil A.');
+}
+if(idade >= 8 & idade <= 11){
+	show('Categoria - Infantil B.');
+}
+if(idade >= 12 & idade <= 13){
+	show('Categoria - Juvenil A.');
+}
+if(idade >= 14 & idade <= 15){
+	show('Categoria - Juvenil B.');
+}
+if(idade >= 16 & idade <= 17){
+	show('Categoria - Junior.');
+}
+if(idade >= 18){
+	show('Categoria - Sênior.');
+}
+
+
+</script>

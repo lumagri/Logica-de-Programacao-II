@@ -1,0 +1,33 @@
+Ex5_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function read(text){
+	return parseFloat(prompt(text)); //parseFloat é usado quando input não é um número inteiro.
+}
+function read2(text){
+	return prompt(text);
+}
+brl();
+
+var Altura = read('Insira sua Altura em metros');
+var Sexo = read2('Insira o sexo biológico')
+var PesoIdeal
+
+if (Sexo == 'homem'){
+	PesoIdeal = ((72.7 * Altura) - 58); 
+}else{
+	PesoIdeal = ((62.1 * Altura) - 44.7);
+}
+show(Math.round(PesoIdeal)+' Kg é o seu peso ideal.');
+
+//ignorar o resultado. O peso ideal é o peso em que a pessoa está saudável metabolicamente. Este calculo é bem baixo.
+
+
+</script>

@@ -1,0 +1,40 @@
+Ex4_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function read(){
+	return parseInt(prompt('Insira o valor de N'));
+}
+brl();
+
+var N = read();
+var PosNeg 
+var ImpPar 
+
+if(N >= 0){
+	PosNeg = 'Positivo'
+}else{
+	PosNeg = 'Negativo'
+}
+if (N % 2 == 0){
+	ImpPar = 'Par'
+}else{
+	ImpPar = 'Impar'
+}
+show('If e Else normal.')
+brl();
+show('N é um número ' + PosNeg + ' e '+ ImpPar);
+brl();
+show('If e Else com operador ternário.')
+PosNeg = N>=0 ? 'Positivo' : 'Negativo'
+ImpPar = N % 2 == 0 ? 'Par' : 'Impar'
+brl();
+show('N é um número ' + PosNeg + ' e '+ ImpPar);
+
+</script>

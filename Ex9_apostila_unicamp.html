@@ -1,0 +1,42 @@
+Ex9_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function readNum(text){
+	return parseFloat(prompt(text));
+}
+function readText(text){
+	return prompt(text);
+}
+brl();
+
+var nome = readText('Insira o nome da Funcionária:');
+var horasTrabalhadas = readNum('Insira as horas trabalhadas no mês:');
+var excedente
+var salario
+var salarioFinal
+
+if (horasTrabalhadas > 50){
+	excedente = horasTrabalhadas - 50;
+}else{
+	excedente = 0;
+}
+
+salario = (horasTrabalhadas - excedente) * 10;
+salarioFinal = salario + (excedente * 20);
+
+show(nome);
+brl();
+show('Horas excedentes '+ excedente);
+brl();
+show('Salário R$'+ salario + ' Horas extras R$' + (excedente*20));
+brl();
+show('Salário Total R$' + salarioFinal);
+
+</script>

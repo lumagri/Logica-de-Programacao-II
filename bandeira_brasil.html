@@ -1,0 +1,31 @@
+bandeira_brasil.html
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+	var tela = document.querySelector('canvas');
+	var pincel = tela.getContext('2d');
+
+	//Quadrado
+	pincel.fillStyle = "green";
+	pincel.fillRect(0,0,500,350);
+
+	//Losângulo
+	pincel.fillStyle = 'yellow';
+	pincel.beginPath();
+	pincel.moveTo(250,50);
+	pincel.lineTo(50,175);
+	pincel.lineTo(250,300);
+	pincel.lineTo(450,175);
+	pincel.fill();
+
+	//Círculo
+	pincel.fillStyle = 'darkblue';
+	pincel.beginPath();
+	pincel.arc(250, 175, 80, 0, 2*3.14);
+	pincel.fill();
+
+
+
+</script>

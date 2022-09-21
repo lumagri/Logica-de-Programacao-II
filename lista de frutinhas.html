@@ -1,0 +1,31 @@
+lista de frutinhas
+
+<script>
+
+function breakLine(){
+	document.write('<br><br>')
+}
+breakLine();
+
+var listaDeFrutinhas = ['morango', 'banana','abacate','abacaxi','maçã','uva','melão'];
+
+document.write('Temos '+ listaDeFrutinhas.length + ' itens na nossa lista de frutinhas!');
+
+breakLine();
+document.write(listaDeFrutinhas[2]+ ' é o terceiro item da lista, mas em um array ocupa a posição 2. Isso acontece pq a contagem das posições se iniciam no 0.');
+breakLine();
+
+for(var i=0; i < listaDeFrutinhas.length;i++){
+	document.write(i+1 + ' ');
+	document.write(listaDeFrutinhas[i]);
+	breakLine();
+}
+
+
+
+
+
+
+
+
+</script>

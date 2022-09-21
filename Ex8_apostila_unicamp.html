@@ -1,0 +1,33 @@
+Ex8_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function readNum(text){
+	return parseFloat(prompt(text));
+}
+function readText(text){
+	return prompt(text);
+}
+brl();
+
+
+var pesoPeixe = readNum('Insira o peso do Peixe:');
+var excesso
+var multa
+if(pesoPeixe >= 50){
+	excesso = pesoPeixe - 50
+	multa = excesso * 4
+	show('Multa de R$' + multa);
+}else{
+	excesso = 0
+	show('Peso dentro do limite permitido.')
+}
+
+
+</script>

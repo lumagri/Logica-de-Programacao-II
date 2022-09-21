@@ -1,0 +1,48 @@
+Ex7_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function readNum(text){
+	return parseFloat(prompt(text));
+}
+function readText(text){
+	return prompt(text);
+}
+brl();
+
+var nome = readText('Insira o nome da funcionária.');
+var salarioBase = readNum('Insira o salário base.')
+var gratificacao = readNum('Insira a gratificação.');
+var salarioBruto
+var ImpostoDeRenda
+var SalarioLiquido
+
+salarioBruto = salarioBase + gratificacao;
+
+if (salarioBruto >= 1000){
+	ImpostoDeRenda = salarioBruto * (15/100);
+}else{
+	ImpostoDeRenda = salarioBruto * (20/100);
+}
+// Mesmo If com Operador Ternário
+//ImpostoDeRenda = salarioBruto >= 1000 
+//    ? salarioBruto * (15/100) 
+//    : salarioBruto * (20/100)
+
+SalarioLiquido = salarioBruto - ImpostoDeRenda;
+
+show(nome);
+brl();
+show('Salário Bruto R$'+ salarioBruto +' Gratificação R$'+ gratificacao);
+brl();
+show('Imposto de Renda R$'+ ImpostoDeRenda);
+brl();
+show('Salário Líquido R$'+ SalarioLiquido);
+
+</script>

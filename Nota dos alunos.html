@@ -1,0 +1,43 @@
+<h1>Nota dos alunos</h1>
+<script type="text/javascript">
+brl();
+brl();
+
+function brl() {
+	document.write('<br>')
+}
+
+
+function mostraNota(nomeDosAlunosfuncao,notaDosAlunosfuncao){
+	for (var i = 0; i < nomeDosAlunosfuncao.length; i++) {
+	document.write(i+1 + ' ' + nomeDosAlunosfuncao[i] + ' ');
+	document.write(notaDosAlunosfuncao[i] + ' - ');
+
+	if(notaDosAlunosfuncao[i] >= 6){
+		document.write('Aprovado');
+	} else{
+		document.write('Vai Estudar!!')
+	} 
+	brl();
+	brl();
+	
+	}
+}
+var nomeDosAlunos = ['Carol', 'Fernando', 'Jason','Alice']
+var notaDosAlunos = [9, 6, 3, 10]
+
+
+mostraNota(nomeDosAlunos,notaDosAlunos);
+
+//for (var i = notaDosAlunos.length - 1; i >= 0; i--) {
+//	notaDosAlunos[i]
+//
+//	document.write(notaDosAlunos[i]);
+//}
+
+
+
+
+
+
+</script>

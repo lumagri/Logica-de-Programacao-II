@@ -1,0 +1,41 @@
+Ex10_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function readNum(text){
+	return parseFloat(prompt(text));
+}
+function readText(text){
+	return prompt(text);
+}
+brl();
+
+var indicePoluicao = readNum('Qual o índice de poluição?');
+if (indicePoluicao == 0.3 ){ 
+	alert('Alto índice de Poluição, parar produção!');
+	show('Mgs enviada para G1 ');
+}
+if (indicePoluicao == 0.4 ){ 
+	alert('Alto índice de Poluição, parar produção!');
+	show('Mgs enviada para G1 e G2');
+}
+if (indicePoluicao > 0.4){ 
+	alert('Alto índice de Poluição, parar produção!');
+	show('Mgs enviada para G1, G2 e G3');
+}
+
+	
+		
+
+
+
+
+
+
+</script>

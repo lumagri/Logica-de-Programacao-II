@@ -1,0 +1,35 @@
+Ex3_apostila_unicamp.html
+<script type="text/javascript">
+function brl() {
+	document.write('<br><br>');
+}
+
+function show(text) {
+	document.write(text);
+}
+
+function read(){
+	return parseInt(prompt('Insira o valor de N'));
+}
+brl();
+show('Exercícios de Loop com while e uso de módulo(%) dentro do if.')
+brl();
+var contador = 1
+while (contador <= 100){
+	contador++
+	if(contador % 10 == 0){
+	show(contador + '   é Multiplo de 10');
+	brl();
+	}
+}
+brl();
+show('Exercícios de Loop com for e uso de módulo(%) dentro do if.')
+brl();
+for (var contador=1; contador <= 100; contador++){
+	if(contador % 5 == 0){
+		show(contador + '   é multiplo de 5.');
+		brl();
+	}
+}
+
+</script>

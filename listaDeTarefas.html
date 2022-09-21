@@ -1,0 +1,28 @@
+listaDeTarefas
+
+<script type="text/javascript">
+	
+	function brl() {
+		document.write('<br><br>')
+	}
+brl();
+
+document.write('While');
+brl();
+
+
+document.write('For');
+brl();
+var afazeres =[]
+while(tarefa != 'Acabou') {
+	var tarefa = prompt('Insira a tarefa.');
+	afazeres[afazeres.length] = tarefa 
+}
+
+
+//var afazeres =[' aguar as plantas ', ' comer ', ' dormir '] 
+for (var tarefas = 0; tarefas < afazeres.length -1; tarefas++) {
+	document.write(tarefas + 1 + afazeres[tarefas]);
+	brl();
+}
+</script>
